@@ -1,108 +1,159 @@
-/* General Style */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Reset Styles */
+* {
     margin: 0;
     padding: 0;
-    color: #212529;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
+/* Body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
 }
 
-.header-content {
-    max-width: 1200px;
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #eaeaea;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
 }
 
-header h2 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: normal;
-    color: #ced4da;
+header p {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-nav {
+header nav {
     margin-top: 15px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+header nav ul {
+    list-style: none;
     display: flex;
+    justify-content: center;
 }
 
-nav li {
-    margin-right: 20px;
+header nav li {
+    margin: 0 15px;
 }
 
-nav a {
+header nav a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    padding: 5px 0;
+    position: relative;
 }
 
-nav a.active, nav a:hover {
-    color: #adb5bd;
+header nav a:hover::after,
+header nav a.active::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #007acc;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
 }
 
+header nav a:hover,
+header nav a.active {
+    color: #007acc;
+}
+
+/* Main Content */
 main {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
+    padding: 40px 0;
 }
 
-section {
-    margin-bottom: 40px;
+.intro, .content {
+    text-align: center;
 }
 
-section h2 {
-    font-size: 1.8em;
-    border-bottom: 2px solid #343a40;
-    padding-bottom: 10px;
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-section ul {
-    list-style-type: none;
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
     padding: 0;
 }
 
-section ul li {
+ul li {
     margin-bottom: 10px;
+    font-size: 1rem;
 }
 
-section ul li strong {
-    font-weight: bold;
-}
-
-section ul li em {
-    font-style: italic;
+ul li strong {
+    font-weight: 600;
 }
 
 footer {
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 1px solid #eaeaea;
     text-align: center;
-    padding: 20px;
-    background-color: #343a40;
-    color: #ffffff;
 }
 
 footer p {
-    margin: 0;
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    color: #666;
 }
 
+footer a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        margin: 10px 0;
+    }
+}
 
 #contact {
     margin-top: 20px;
