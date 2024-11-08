@@ -1,4 +1,4 @@
 title: "Gabriel Johnston | Academic & Music Portfolio"
 description: "Personal website for academic research and music portfolio"
-baseurl: "" # Leave empty if deploying to user.github.io
-url: "https://yourusername.github.io" # Replace with your GitHub Pages URL
+baseurl: "" # Leave empty for user pages like yourusername.github.io
+url: "https://yourusername.github.io" # Replace with your actual GitHub Pages URL
