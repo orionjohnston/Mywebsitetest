@@ -1,69 +1,108 @@
 /* General Style */
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
+    color: #212529;
 }
 
 header {
-    text-align: center;
-    padding: 40px;
-    color: #333;
-    background-color: #f0f4f8;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header h1 {
-    font-size: 2.5em;
     margin: 0;
-    font-weight: bold;
+    font-size: 2.5em;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #555;
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #ced4da;
 }
 
 nav {
-    margin-top: 20px;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
 }
 
 nav a {
     text-decoration: none;
-    color: #007acc;
-    margin: 0 15px;
+    color: #ffffff;
     font-weight: bold;
     font-size: 1em;
 }
 
-nav a:hover {
-    color: #005f99;
+nav a.active, nav a:hover {
+    color: #adb5bd;
 }
 
-.container {
-    text-align: center;
-    padding: 50px 20px;
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-.container p {
-    font-size: 1.2em;
-    color: #333;
-    max-width: 800px;
-    margin: 20px auto;
-    line-height: 1.6;
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8em;
+    border-bottom: 2px solid #343a40;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li strong {
+    font-weight: bold;
+}
+
+section ul li em {
+    font-style: italic;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #343a40;
+    color: #ffffff;
 }
 
 footer p {
     margin: 0;
     font-size: 0.9em;
 }
+
 
 #contact {
     margin-top: 20px;
